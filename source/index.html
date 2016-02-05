@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pixel2HTML, skills test sample code</title>
+	<!-- stylesheet -->
+    <link href="assets/stylesheet/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,300" rel="stylesheet" type="text/css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- javascript -->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 top-header">
+                <div>
+                    <h2>Sign Up</h2>
+                    <span class="hidden-md-down">Desktop View</span>
+                    <span class="hidden-md-up">Mobile View</span>
+                </div>
+            </div> <!-- top header -->
+        </div>
+        <div id="body-content">
+            <div class="text-center">
+                <div class="center-block">
+                    <div class="row no-gutters">
+                        <div class="body-form col-md-push-2 col-sm-push-2 col-xs-push-2 col-md-8 col-sm-8 col-xs-8">
+                            <div class="form-header">
+                                <div class="col-md-12 col-sm-4 col-xs-4 logo">
+                                    <img src="assets/images/logo.svg" alt="logo" class="wow bounceIn" />
+                                </div>
+                                <div class="col-md-12 col-sm-8 col-xs-8 wow fadeIn" data-wow-delay="0.3s">
+                                    <h4>Create new account</h4>
+                                    <span>Enter your credentials below</span>
+                                </div>
+                            </div> <!-- form header -->
+                            <div class="form-content col-md-12 col-xs-12 col-sm-12">
+                                <form name="signup" id="signup-form" class="col-md-12 col-xs-12 col-sm-12" data-parsley-validate="" data-parsley-ui-enabled="true">
+                                    <div class="col-md-7 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.3s">
+                                        <label for="fullname">Full Name</label>
+                                        <input type="text" class="form-control" name="fullname" placeholder="Name and surname" required="">
+                                    </div>
+                                    <div class="col-md-5 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.3s">
+                                        <label for="username">Username</label>
+                                        <input type="text" class="form-control" name="username" placeholder="Username" required="">
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.3s">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" name="email" placeholder="Email address" data-parsley-trigger="change" required="">
+                                    </div>
+                                    <div class="col-md-7 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.3s">
+                                        <label for="country">Country</label>
+                                        <input type="text" class="form-control" name="country" placeholder="Country" required="">
+                                    </div>
+                                    <div class="col-md-5 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.3s">
+                                        <label for="city">City</label>
+                                        <input type="text" class="form-control" name="city" placeholder="City" required="">
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.3s">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" class="form-control" name="password" placeholder="Password" required="">
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.3s">
+                                        <input type="password" id="repeat-password" class="form-control repass" name="repeat-password" placeholder="Repeat password" required="" data-parsley-equalto="#password">
+                                    </div>
+                                    <div class="col-md-7 col-sm-12 col-xs-12 wow fadeIn checkbox" data-wow-delay="0.3s">
+                                        <input type="checkbox" class="styled" name="terms" id="terms" value="terms" required="">
+                                        <label for="terms">
+                                            I accept the <a href="#">Terms & Conditions</a>
+                                        </label>
+                                        
+                                    </div>
+                                    <div class="col-md-5 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="0.3s">
+                                        <input type="submit" class="btn btn-success col-xs-12 pull-md-right pull-sm-none pull-xs-none" value="Create account">
+                                    </div>
+                                </form>
+                            </div> <!-- form -content -->
+                            <div class="sign-in hidden-md-up">
+                                <div class="text-center">
+                                    <span>Have account already? <a href="#">Sign in</a></span>
+                                </div>
+                            </div>
+                        </div> <!-- body form -->
+                    </div> <!-- row no gutters -->
+                    <div class="sign-in hidden-md-down">
+                        <div class="text-center">
+                            <span>Have account already? <a href="#">Sign in</a></span>
+                        </div>
+                 </div>
+                </div>
+            </div>
+        </div> <!-- body content -->
+    </div>
+	
+	
+	<!-- footer scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.2.0/parsley.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="assets/javascript/bundle.min.js"></script>
+    
+</body>
+</html>

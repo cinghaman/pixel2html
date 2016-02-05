@@ -1,0 +1,262 @@
+// custom variables
+$border-radius-base: 4px;
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    @media (max-width: 61.9em) {
+        font-size: .8rem;
+    }
+    background-color: #f4f5f5;
+    .text-center {
+        text-align: center;
+    }
+    .top-header {
+        padding-top: 30px;
+        h2 {
+            font-size: 2rem;
+            @media (max-width: 61.9em) {
+                font-size: 1.25rem;
+            }
+        }
+        span { 
+            font-size: 1.375rem;
+            @media (max-width: 61.9em) {
+                font-size: .7375rem;
+            }
+            color: #62666a;
+            font-family: 'Lato';
+        }
+    } //top header  
+    #body-content {
+        text-align: center;
+        margin-top: 100px;
+        @media (max-width: 61.9em) {
+            margin-top: 60px;
+        }
+        .body-form {
+            border-radius: $border-radius-base;
+            background-color: #fff;
+            border: 1px solid #d4d8df;
+            -webkit-box-shadow: 2px 0px 5px 0px rgba(235,236,236,0.45);
+            -moz-box-shadow: 2px 0px 5px 0px rgba(235,236,236,0.45);
+            box-shadow: 2px 0px 5px 0px rgba(235,236,236,0.45);
+            display: inline-block;
+            .form-header {
+                border-bottom: 1px solid #e6e9ed;
+                padding: 25px 0 25px 0;
+                display: inline-block;
+                width: 100%;
+                @media (max-width: 61.9em) {
+                    padding: 10px 0 10px 0;
+                }
+                .logo {
+                    margin-bottom: 10px;
+                    @media (max-width: 61.9em) {
+                        margin-bottom: 0;
+                    }
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        width: 75px;
+                    }
+                }
+                h4 {
+                    font-size: 1.125rem;
+                    @media (max-width: 61.9em) {
+                        font-size: .5rem;
+                        line-height: 1;
+                        margin-bottom: 0;
+                        padding: 15px 0 0 0;
+                    }
+                }
+                span {
+                    color: #8890a4;
+                    font-size: 1rem;
+                    @media (max-width: 61.9em) {
+                        font-size: .49rem;
+                    }
+                    font-weight: 100;
+                    font-family: 'lato';
+                }
+            } //form header
+            .form-content {
+                padding: 25px 0 25px 0;
+               @media (max-width: 61.9em) {
+                    padding: 0;
+                }
+                #signup-form {
+                    text-align: left;
+                    padding: 0 80px 20px 80px;
+                    @media (max-width: 61.9em) {
+                        padding: 0 0 20px 0;
+                    }
+                    input::focus {
+                        outline: none;
+                    }
+                    label {
+                        font-size: .9375rem;
+                        @media (max-width: 61.9em) {
+                                font-size: .8rem;
+                        }
+                    }
+                    .parsley-errors-list {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        &#parsley-id-14 {
+                            margin-top: -16px;
+                            position: relative;
+                            z-index: 99999;
+                        }
+                        .parsley-required {
+                            color: #d9534f;
+                            margin-bottom: 10px; 
+                            margin-top: -10px;
+                            font-family: 'Lato';
+                            text-transform: uppercase;
+                            font-size: .6rem;
+                        }
+                    }
+                    input[type="text"] {
+                        padding: 10px;
+                        line-height: 20px;
+                        border-radius: $border-radius-base;
+                        border-color: #d4d8df;
+                        -webkit-box-shadow: 1px 0px 3px 0px rgba(235,236,236,0.45);
+                        -moz-box-shadow: 1px 0px 3px 0px rgba(235,236,236,0.45);
+                        box-shadow: 1px 0px 3px 0px rgba(235,236,236,0.45);
+                        color: #cdd0d4;
+                        font-size: 1rem;
+                        font-weight: 100;
+                        font-family: 'lato';
+                        margin-bottom: 20px;
+                        @media (max-width: 61.9em) {
+                                font-size: .8rem;
+                        }
+                    }
+                    input[type="email"] {
+                        @extend input[type="text"];
+                    }
+                    input[type="password"] {
+                        @extend input[type="text"];
+                         border-bottom-left-radius: 0;
+                         border-bottom-right-radius: 0;
+                        &.repass {
+                            border-top-left-radius: 0;
+                            border-top-right-radius: 0;
+                            border-bottom-left-radius: 4px;
+                            border-bottom-right-radius: 4px;
+                            border-top: 0;
+                            margin-top: -20px;
+                        }
+                    }
+                    .checkbox {
+                         padding-left: 20px;
+                        input[type="checkbox"] {
+                            opacity: 0;
+                            z-index: 1
+                        }
+                        input[type="checkbox"]:focus + label::before {
+                           outline: none;
+                        }
+                        input[type="checkbox"]:checked + label::after {
+                             font-family: "FontAwesome";
+                             content: "\f00c";
+                        }
+                         label {
+                              display: inline-block;
+                              vertical-align: middle;
+                              position: relative;
+                              padding-left: 26px;
+                             font-family: 'lato';
+                             font-weight: 300;
+                             color: #8890a4;
+                             a {
+                                 color: #389bff;
+                             }
+                             &::before {
+                                  content: "";
+                                  display: inline-block;
+                                  position: absolute;
+                                  width: 20px;
+                                  height: 20px;
+                                  left: 0;
+                                  margin-left: -4px;
+                                  border: 1px solid #d4d8df;
+                                  border-radius: $border-radius-base;
+                                  background-color: #fff;
+                            }
+                             &::after {
+                                  display: inline-block;
+                                  position: absolute;
+                                  width: 20px;
+                                  height: 20px;
+                                  left: 0;
+                                  top: 0;
+                                  margin-left: -14px;
+                                  padding-left: 15px;
+                                  padding-top: 1px;
+                                  font-size: 13px;
+                                  color: #8890a4;
+                            }
+                        }
+                    }
+                    input[type="submit"] {
+                        &.btn-success {
+                            background-color: #67c60b;
+                            font-size: 1rem;
+                            padding: 10px;
+                            border-color: #67c60b;
+                            padding-left: 25px;
+                            padding-right: 25px;
+                            @media (max-width: 61.9em) {
+                                font-size: .8rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .sign-in {
+                padding-bottom: 20px;
+                font-size: .9375rem;
+                font-weight: 100;
+                font-family: 'lato';
+                color: #8890a4;
+                @media (max-width: 61.9em) {
+                    font-size: .5375rem;
+                }
+                a {
+                    color: #389bff;
+                }
+            }
+        } // body form
+        .sign-in {
+            font-size: .9375rem;
+            font-weight: 100;
+            font-family: 'lato';
+            color: #8890a4;
+            @media (max-width: 61.9em) {
+                font-size: .5375rem;
+            }
+            a {
+                color: #389bff;
+            }
+            padding-top: 20px;
+            padding-bottom: 0;
+        }
+    } //body content
+    > .container {
+        padding-bottom: 40px;
+    }
+} // body
+
+// no gutter hack 
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  > [class^="col-"],
+  > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
